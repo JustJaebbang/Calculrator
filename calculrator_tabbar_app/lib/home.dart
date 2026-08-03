@@ -46,10 +46,11 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
         color: Colors.blue,
         height: 50,
         child: TabBar(
+          labelColor: Colors.white,
           controller: controller,
           tabs: [
             Tab(
-              text: '덧셈',
+              text: '덧셈', 
             ),
             Tab(
               text: '뺄셈',
