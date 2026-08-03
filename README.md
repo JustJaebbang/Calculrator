@@ -4,12 +4,19 @@
 skrrrrrrrrrrrrrrrrrrrrrrrr
 
 # **팀장 허재영**
-#home.dart
-#first_page.dart
-
+```
+Branch : Jaeyoung
+home.dart
+first_page.dart
+```
 # **귀요미 인성남궁**
-#second_page.dart
-#third_page.dart
-
+```
+Branch : Inseong
+second_page.dart
+third_page.dart
+```
 # **포린이 민재형**
-#fourth_page.dart
+```
+Branch : Minjae
+fourth_page.dart
+```
