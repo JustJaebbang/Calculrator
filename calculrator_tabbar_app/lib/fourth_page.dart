@@ -46,7 +46,7 @@ class _FourthPageState extends State<FourthPage> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    //
+                    div();
                   }, 
                   child: Text("OK"),
                   ),
@@ -65,11 +65,14 @@ class _FourthPageState extends State<FourthPage> {
       ),
     );
   }
-  void add() {
+  void div() {
     if(controller1.text.trim().isNotEmpty && controller2.text.trim().isNotEmpty);
     int num1 = int.parse(controller1.text.trim());
     int num2 = int.parse(controller2.text.trim());
-    int sum = num1%num2;
+    // double sum = num1/num2;
+    String sum = (num1/num2).toStringAsFixed(0);
+
+    controller3.text=sum;
     
     setState(() {});
   }
