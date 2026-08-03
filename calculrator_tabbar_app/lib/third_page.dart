@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class SecondPage extends StatefulWidget {
-  const SecondPage({super.key});
+class ThirdPage extends StatefulWidget {
+  const ThirdPage({super.key});
 
   @override
-  State<SecondPage> createState() => _SecondPageState();
+  State<ThirdPage> createState() => _ThirdPageState();
 }
 
-class _SecondPageState extends State<SecondPage> {
-    // Property
+class _ThirdPageState extends State<ThirdPage> {
+  // Property
   late TextEditingController controller1;
   late TextEditingController controller2;
   late int num1;
@@ -64,14 +64,14 @@ class _SecondPageState extends State<SecondPage> {
                   if(controller1.text.trim().isNotEmpty == true && controller2.text.trim().isNotEmpty == true) {
                     num1 = int.parse(controller1.text.trim());
                     num2 = int.parse(controller2.text.trim());
-                    resultNum = num1 - num2;
+                    resultNum = num1 * num2;
                     setState(() {});
                   }
                 },
                 child: Text("OK")
               ),
               Text(
-                "$num1 - $num2 = $resultNum",
+                "$num1 * $num2 = $resultNum",
                 style: TextStyle(
                   fontSize: 20
                 ),
